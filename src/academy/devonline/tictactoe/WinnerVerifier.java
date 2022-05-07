@@ -20,13 +20,13 @@ package academy.devonline.tictactoe;
  * @author devonline
  * @link http://devonline.academy/java
  */
+public class WinnerVerifier {
 
-public final class Launcher {
+    public boolean isUserWin(final GameTable gameTable) {
+        return false;
+    }
 
-    public static void main(String[] args) {
-        final Game game = new Game(
-                new DataPrinter(), new ComputerMove(), new UserMove(), new WinnerVerifier(), new DrawVerifier()
-        );
-        game.play();
+    public boolean isComputerWin(final GameTable gameTable) {
+        return false;
     }
 }
