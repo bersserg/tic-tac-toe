@@ -23,6 +23,7 @@ import java.util.Arrays;
  * @link http://devonline.academy/java
  */
 public class GameTable {
+
     private final char[][] table = {
             {' ', ' ', ' '},
             {' ', ' ', ' '},
@@ -30,15 +31,15 @@ public class GameTable {
     };
 
     public boolean isEmpty(final Cell cell) {
-        return table[cell.getRaw()][cell.getCol()] == ' ';
+        return table[cell.getRow()][cell.getCol()] == ' ';
     }
 
     public char getSign(final Cell cell) {
-        return table[cell.getRaw()][cell.getCol()];
+        return table[cell.getRow()][cell.getCol()];
     }
 
     public void setSign(final Cell cell, final char sign) {
-        table[cell.getRaw()][cell.getCol()] = sign;
+        table[cell.getRow()][cell.getCol()] = sign;
     }
 
     @Override

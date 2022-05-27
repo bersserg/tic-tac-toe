@@ -22,17 +22,17 @@ package academy.devonline.tictactoe.model;
  */
 public class Cell {
 
-    private final int raw;
+    private final int row;
 
     private final int col;
 
-    public Cell(final int raw, final int col) {
-        this.raw = raw;
+    public Cell(final int row, final int col) {
+        this.row = row;
         this.col = col;
     }
 
-    public int getRaw() {
-        return raw;
+    public int getRow() {
+        return row;
     }
 
     public int getCol() {
@@ -42,7 +42,7 @@ public class Cell {
     @Override
     public String toString() {
         return "Cell{" +
-                "raw=" + raw +
+                "row=" + row +
                 ", col=" + col +
                 '}';
     }
