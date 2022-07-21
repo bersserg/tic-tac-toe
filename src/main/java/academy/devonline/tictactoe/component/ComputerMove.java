@@ -20,6 +20,7 @@ import academy.devonline.tictactoe.model.Cell;
 import academy.devonline.tictactoe.model.GameTable;
 
 import java.util.Random;
+
 /**
  * @author devonline
  * @link http://devonline.academy/java
